@@ -9,6 +9,7 @@
 //= require bootstrap
 //= require_tree .
 //= require_self
+//= ocb
 
 if (typeof jQuery !== 'undefined') {
     (function($) {
