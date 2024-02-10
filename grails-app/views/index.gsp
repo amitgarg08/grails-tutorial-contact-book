@@ -2,9 +2,11 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-   %{-- <title>Welcome to Grails</title>--}%
-    <h1>Hello World example</h1>
 </head>
+
 <body>
+
+<h1>Bismillah Grails Online Contacts Book View</h1>
+
 </body>
 </html>
