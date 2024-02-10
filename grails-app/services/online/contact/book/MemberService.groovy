@@ -6,10 +6,10 @@ import grails.web.servlet.mvc.GrailsParameterMap
 @Transactional
 class MemberService {
     def save(GrailsParameterMap params) {
-        //   Member member = new Member(params)
+           Member member = new Member(params)
         def response
-        for (int i = 1005; i < 2000; i++) {
-            Member member = new Member(firstName: params.firstName + "_" + i, lastName: params.lastName + "_" + i, email: "aaa" + i + "@google.com", password: params.password)
+//        for (int i = 1005; i < 2000; i++) {
+//            Member member = new Member(firstName: params.firstName + "_" + i, lastName: params.lastName + "_" + i, email: "aaa" + i + "@google.com", password: params.password)
             response = AppUtil.saveResponse(false, member)
             // if (member.validate()) {
             member.save(flush: true)
@@ -17,7 +17,7 @@ class MemberService {
             // if (!member.hasErrors()) {
             // response.isSuccess = true
             //}
-        }
+//        }
         response.isSuccess = true
         return response
 
